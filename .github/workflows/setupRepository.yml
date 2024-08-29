@@ -21,4 +21,4 @@ jobs:
             const repoName = context.payload.repository.name;
             const setupScript = require('.github/workflows/setupRepository.cjs');
             setupScript.initRepo({github, context, org, repoName});
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v5
